@@ -34,8 +34,8 @@ int main(int argc , char** arg)
 
 	unsigned char buff[0xffff];
 	memset(buff, 0, 0xffff);
-	short ptr = 0; 
-	int ip = 0;
+	unsigned short ptr = 0; 
+	unsigned int ip = 0;
 	for( ;ip < prog_len;){
 		ptr&=0xffff;
 		switch (prog[ip]) {
