@@ -37,6 +37,7 @@ int main(int argc , char** arg)
 	short ptr = 0; 
 	int ip = 0;
 	for( ;ip < prog_len;){
+		ptr&=0xffff;
 		switch (prog[ip]) {
 			case '>':
 				ptr++;
